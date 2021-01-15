@@ -2,12 +2,13 @@ FROM python:3-slim-buster
 
 ARG BITWARDEN_VERSION=1.13.3
 
-RUN pip install pip --upgrade
-RUN pip install ansible
-
 RUN apt-get update -y && \
 	DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-	sshpass unzip wget build-essential libssl-dev libffi-dev
+	sshpass unzip wget build-essential libssl-dev libffi-dev python-dev
+
+RUN pip install pip --upgrade
+RUN pip install cryptography
+RUN pip install ansible
 
 ################################
 # Install Bitwarden
