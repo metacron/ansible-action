@@ -7,7 +7,7 @@ RUN pip install ansible
 
 RUN apt-get update -y && \
 	DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-	sshpass unzip wget
+	sshpass unzip wget build-essential libssl-dev libffi-dev
 
 ################################
 # Install Bitwarden
