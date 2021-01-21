@@ -1,4 +1,4 @@
-FROM python:3-slim-buster
+FROM python:3-buster
 
 ARG BITWARDEN_VERSION=1.13.3
 
