@@ -17,8 +17,7 @@ RUN pip install ansible
 RUN wget --progress=dot:mega https://github.com/bitwarden/cli/releases/download/v${BITWARDEN_VERSION}/bw-linux-${BITWARDEN_VERSION}.zip
 RUN unzip bw-linux-${BITWARDEN_VERSION}.zip && \
 	mv bw /usr/local/bin && \
-	chmod +x /usr/local/bin/bw && \
-	bw -v
+	chmod +x /usr/local/bin/bw
 
 WORKDIR /workspace
 
