@@ -9,6 +9,7 @@ RUN yum check-update; \
   yum install -y openssh-clients; \
   yum install -y sshpass; \
   pip3 install --upgrade pip; \
+  pip3 install requests google-auth; \
   pip3 install ansible
 
 WORKDIR /workspace
