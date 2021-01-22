@@ -1,6 +1,6 @@
 # Ansible Action
 
-This repository is just an container image builder using [this Dockerfile](Dockerfile). The image is created from a CentOS 8 pure base image (`centos:8`) and published as [metacron/ansible-action](https://github.com/orgs/metacron/packages/container/package/ansible-action) GitHub Package by automated workflows (GitHub Actions). You can use it as a secure way to run Ansible in Docker and as a step for GitHub Actions workflow:
+This repository is just a container image builder using [this Dockerfile](Dockerfile). The image is created from a CentOS 8 pure base image (`centos:8`) and published as [metacron/ansible-action](https://github.com/orgs/metacron/packages/container/package/ansible-action) GitHub Package by automated workflows (GitHub Actions). You can use it as a secure way to run Ansible in Docker and as a step for GitHub Actions workflow:
 
 ```yml
 name: Ansible (Operations Automation)
